@@ -338,13 +338,28 @@ namespace URLFUZZ
         private void Form1_Load(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.URLFUZZ_URL != string.Empty)
-            { 
-            
+            {
+                textBox_URLFUZZ_URL.Text = Properties.Settings.Default.URLFUZZ_URL;
             }
             if (Properties.Settings.Default.URLFUZZ_CUSTOM != string.Empty)
             {
-
+                textBox_URLFUZZ_CUSTOM.Text = Properties.Settings.Default.URLFUZZ_CUSTOM;
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //
+            if (textBox_URLFUZZ_URL.Text != string.Empty)
+            {
+                Properties.Settings.Default.URLFUZZ_URL = textBox_URLFUZZ_URL.Text;
+            }
+            if (textBox_URLFUZZ_CUSTOM.Text != string.Empty)
+            {
+                Properties.Settings.Default.URLFUZZ_CUSTOM = textBox_URLFUZZ_CUSTOM.Text;
+            }
+            //
+            Properties.Settings.Default.Save();
         }
     }
 }

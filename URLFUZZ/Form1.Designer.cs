@@ -30,19 +30,19 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox_URLFUZZ_REPLACE1 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button_URLFUZZ_SAVE = new System.Windows.Forms.Button();
+            this.button_URLFUZZ_CLEAR = new System.Windows.Forms.Button();
+            this.checkBox_URLFUZZ_REMOVE = new System.Windows.Forms.CheckBox();
+            this.checkBox_URLFUZZ_NODOMAIN = new System.Windows.Forms.CheckBox();
+            this.textBox_URLFUZZ_CUSTOM = new System.Windows.Forms.TextBox();
+            this.button_URLFUZZ_FUZZ = new System.Windows.Forms.Button();
+            this.checkBox_URLFUZZ_CUSTOM = new System.Windows.Forms.CheckBox();
+            this.textBox_URLFUZZ_URL = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox_URLFUZZ = new System.Windows.Forms.GroupBox();
             this.listBox_URLFUZZ_Payload = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox_URLFUZZ_URL = new System.Windows.Forms.TextBox();
-            this.checkBox_URLFUZZ_CUSTOM = new System.Windows.Forms.CheckBox();
-            this.button_URLFUZZ_FUZZ = new System.Windows.Forms.Button();
-            this.textBox_URLFUZZ_CUSTOM = new System.Windows.Forms.TextBox();
-            this.checkBox_URLFUZZ_NODOMAIN = new System.Windows.Forms.CheckBox();
-            this.checkBox_URLFUZZ_REMOVE = new System.Windows.Forms.CheckBox();
-            this.button_URLFUZZ_CLEAR = new System.Windows.Forms.Button();
-            this.button_URLFUZZ_SAVE = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox_URLFUZZ_REPLACE1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -88,6 +88,124 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // checkBox_URLFUZZ_REPLACE1
+            // 
+            this.checkBox_URLFUZZ_REPLACE1.AutoSize = true;
+            this.checkBox_URLFUZZ_REPLACE1.Location = new System.Drawing.Point(47, 125);
+            this.checkBox_URLFUZZ_REPLACE1.Name = "checkBox_URLFUZZ_REPLACE1";
+            this.checkBox_URLFUZZ_REPLACE1.Size = new System.Drawing.Size(72, 16);
+            this.checkBox_URLFUZZ_REPLACE1.TabIndex = 10;
+            this.checkBox_URLFUZZ_REPLACE1.Text = ". -> %2e";
+            this.checkBox_URLFUZZ_REPLACE1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(43, 152);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(329, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "[*]DoubleClick item of listbox send data to Clipboard.";
+            // 
+            // button_URLFUZZ_SAVE
+            // 
+            this.button_URLFUZZ_SAVE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_URLFUZZ_SAVE.Location = new System.Drawing.Point(405, 473);
+            this.button_URLFUZZ_SAVE.Name = "button_URLFUZZ_SAVE";
+            this.button_URLFUZZ_SAVE.Size = new System.Drawing.Size(111, 34);
+            this.button_URLFUZZ_SAVE.TabIndex = 8;
+            this.button_URLFUZZ_SAVE.Text = "SAVE";
+            this.button_URLFUZZ_SAVE.UseVisualStyleBackColor = true;
+            this.button_URLFUZZ_SAVE.Click += new System.EventHandler(this.button_URLFUZZ_SAVE_Click);
+            // 
+            // button_URLFUZZ_CLEAR
+            // 
+            this.button_URLFUZZ_CLEAR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_URLFUZZ_CLEAR.Location = new System.Drawing.Point(405, 513);
+            this.button_URLFUZZ_CLEAR.Name = "button_URLFUZZ_CLEAR";
+            this.button_URLFUZZ_CLEAR.Size = new System.Drawing.Size(111, 34);
+            this.button_URLFUZZ_CLEAR.TabIndex = 7;
+            this.button_URLFUZZ_CLEAR.Text = "CLEAR";
+            this.button_URLFUZZ_CLEAR.UseVisualStyleBackColor = true;
+            this.button_URLFUZZ_CLEAR.Click += new System.EventHandler(this.button_URLFUZZ_CLEAR_Click);
+            // 
+            // checkBox_URLFUZZ_REMOVE
+            // 
+            this.checkBox_URLFUZZ_REMOVE.AutoSize = true;
+            this.checkBox_URLFUZZ_REMOVE.Checked = true;
+            this.checkBox_URLFUZZ_REMOVE.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_URLFUZZ_REMOVE.Location = new System.Drawing.Point(47, 103);
+            this.checkBox_URLFUZZ_REMOVE.Name = "checkBox_URLFUZZ_REMOVE";
+            this.checkBox_URLFUZZ_REMOVE.Size = new System.Drawing.Size(168, 16);
+            this.checkBox_URLFUZZ_REMOVE.TabIndex = 6;
+            this.checkBox_URLFUZZ_REMOVE.Text = "Remove NoStartsWith(\"/\")";
+            this.checkBox_URLFUZZ_REMOVE.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_URLFUZZ_NODOMAIN
+            // 
+            this.checkBox_URLFUZZ_NODOMAIN.AutoSize = true;
+            this.checkBox_URLFUZZ_NODOMAIN.Checked = true;
+            this.checkBox_URLFUZZ_NODOMAIN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_URLFUZZ_NODOMAIN.Location = new System.Drawing.Point(47, 81);
+            this.checkBox_URLFUZZ_NODOMAIN.Name = "checkBox_URLFUZZ_NODOMAIN";
+            this.checkBox_URLFUZZ_NODOMAIN.Size = new System.Drawing.Size(78, 16);
+            this.checkBox_URLFUZZ_NODOMAIN.TabIndex = 5;
+            this.checkBox_URLFUZZ_NODOMAIN.Text = "No Domain";
+            this.checkBox_URLFUZZ_NODOMAIN.UseVisualStyleBackColor = true;
+            // 
+            // textBox_URLFUZZ_CUSTOM
+            // 
+            this.textBox_URLFUZZ_CUSTOM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_URLFUZZ_CUSTOM.Location = new System.Drawing.Point(143, 47);
+            this.textBox_URLFUZZ_CUSTOM.Name = "textBox_URLFUZZ_CUSTOM";
+            this.textBox_URLFUZZ_CUSTOM.Size = new System.Drawing.Size(373, 21);
+            this.textBox_URLFUZZ_CUSTOM.TabIndex = 4;
+            this.textBox_URLFUZZ_CUSTOM.Text = "/search/%2e%2e/";
+            // 
+            // button_URLFUZZ_FUZZ
+            // 
+            this.button_URLFUZZ_FUZZ.Location = new System.Drawing.Point(47, 176);
+            this.button_URLFUZZ_FUZZ.Name = "button_URLFUZZ_FUZZ";
+            this.button_URLFUZZ_FUZZ.Size = new System.Drawing.Size(111, 34);
+            this.button_URLFUZZ_FUZZ.TabIndex = 3;
+            this.button_URLFUZZ_FUZZ.Text = "FUZZ";
+            this.button_URLFUZZ_FUZZ.UseVisualStyleBackColor = true;
+            this.button_URLFUZZ_FUZZ.Click += new System.EventHandler(this.button_URLFUZZ_FUZZ_Click);
+            // 
+            // checkBox_URLFUZZ_CUSTOM
+            // 
+            this.checkBox_URLFUZZ_CUSTOM.AutoSize = true;
+            this.checkBox_URLFUZZ_CUSTOM.Checked = true;
+            this.checkBox_URLFUZZ_CUSTOM.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_URLFUZZ_CUSTOM.Location = new System.Drawing.Point(47, 49);
+            this.checkBox_URLFUZZ_CUSTOM.Name = "checkBox_URLFUZZ_CUSTOM";
+            this.checkBox_URLFUZZ_CUSTOM.Size = new System.Drawing.Size(90, 16);
+            this.checkBox_URLFUZZ_CUSTOM.TabIndex = 2;
+            this.checkBox_URLFUZZ_CUSTOM.Text = "Custom Rule";
+            this.checkBox_URLFUZZ_CUSTOM.UseVisualStyleBackColor = true;
+            // 
+            // textBox_URLFUZZ_URL
+            // 
+            this.textBox_URLFUZZ_URL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_URLFUZZ_URL.Location = new System.Drawing.Point(47, 20);
+            this.textBox_URLFUZZ_URL.Name = "textBox_URLFUZZ_URL";
+            this.textBox_URLFUZZ_URL.Size = new System.Drawing.Size(469, 21);
+            this.textBox_URLFUZZ_URL.TabIndex = 1;
+            this.textBox_URLFUZZ_URL.Text = "http://192.168.10.23/public/upload/files/111.jpg";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "URL:";
+            // 
             // groupBox_URLFUZZ
             // 
             this.groupBox_URLFUZZ.Controls.Add(this.listBox_URLFUZZ_Payload);
@@ -110,124 +228,6 @@
             this.listBox_URLFUZZ_Payload.TabIndex = 0;
             this.listBox_URLFUZZ_Payload.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox_URLFUZZ_Payload_MouseDoubleClick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "URL:";
-            // 
-            // textBox_URLFUZZ_URL
-            // 
-            this.textBox_URLFUZZ_URL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_URLFUZZ_URL.Location = new System.Drawing.Point(47, 20);
-            this.textBox_URLFUZZ_URL.Name = "textBox_URLFUZZ_URL";
-            this.textBox_URLFUZZ_URL.Size = new System.Drawing.Size(469, 21);
-            this.textBox_URLFUZZ_URL.TabIndex = 1;
-            this.textBox_URLFUZZ_URL.Text = "http://192.168.10.23/public/upload/files/111.jpg";
-            // 
-            // checkBox_URLFUZZ_CUSTOM
-            // 
-            this.checkBox_URLFUZZ_CUSTOM.AutoSize = true;
-            this.checkBox_URLFUZZ_CUSTOM.Checked = true;
-            this.checkBox_URLFUZZ_CUSTOM.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_URLFUZZ_CUSTOM.Location = new System.Drawing.Point(47, 49);
-            this.checkBox_URLFUZZ_CUSTOM.Name = "checkBox_URLFUZZ_CUSTOM";
-            this.checkBox_URLFUZZ_CUSTOM.Size = new System.Drawing.Size(90, 16);
-            this.checkBox_URLFUZZ_CUSTOM.TabIndex = 2;
-            this.checkBox_URLFUZZ_CUSTOM.Text = "Custom Rule";
-            this.checkBox_URLFUZZ_CUSTOM.UseVisualStyleBackColor = true;
-            // 
-            // button_URLFUZZ_FUZZ
-            // 
-            this.button_URLFUZZ_FUZZ.Location = new System.Drawing.Point(47, 176);
-            this.button_URLFUZZ_FUZZ.Name = "button_URLFUZZ_FUZZ";
-            this.button_URLFUZZ_FUZZ.Size = new System.Drawing.Size(111, 34);
-            this.button_URLFUZZ_FUZZ.TabIndex = 3;
-            this.button_URLFUZZ_FUZZ.Text = "FUZZ";
-            this.button_URLFUZZ_FUZZ.UseVisualStyleBackColor = true;
-            this.button_URLFUZZ_FUZZ.Click += new System.EventHandler(this.button_URLFUZZ_FUZZ_Click);
-            // 
-            // textBox_URLFUZZ_CUSTOM
-            // 
-            this.textBox_URLFUZZ_CUSTOM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_URLFUZZ_CUSTOM.Location = new System.Drawing.Point(143, 47);
-            this.textBox_URLFUZZ_CUSTOM.Name = "textBox_URLFUZZ_CUSTOM";
-            this.textBox_URLFUZZ_CUSTOM.Size = new System.Drawing.Size(373, 21);
-            this.textBox_URLFUZZ_CUSTOM.TabIndex = 4;
-            this.textBox_URLFUZZ_CUSTOM.Text = "/search/%2e%2e/";
-            // 
-            // checkBox_URLFUZZ_NODOMAIN
-            // 
-            this.checkBox_URLFUZZ_NODOMAIN.AutoSize = true;
-            this.checkBox_URLFUZZ_NODOMAIN.Checked = true;
-            this.checkBox_URLFUZZ_NODOMAIN.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_URLFUZZ_NODOMAIN.Location = new System.Drawing.Point(47, 81);
-            this.checkBox_URLFUZZ_NODOMAIN.Name = "checkBox_URLFUZZ_NODOMAIN";
-            this.checkBox_URLFUZZ_NODOMAIN.Size = new System.Drawing.Size(78, 16);
-            this.checkBox_URLFUZZ_NODOMAIN.TabIndex = 5;
-            this.checkBox_URLFUZZ_NODOMAIN.Text = "No Domain";
-            this.checkBox_URLFUZZ_NODOMAIN.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_URLFUZZ_REMOVE
-            // 
-            this.checkBox_URLFUZZ_REMOVE.AutoSize = true;
-            this.checkBox_URLFUZZ_REMOVE.Checked = true;
-            this.checkBox_URLFUZZ_REMOVE.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_URLFUZZ_REMOVE.Location = new System.Drawing.Point(47, 103);
-            this.checkBox_URLFUZZ_REMOVE.Name = "checkBox_URLFUZZ_REMOVE";
-            this.checkBox_URLFUZZ_REMOVE.Size = new System.Drawing.Size(168, 16);
-            this.checkBox_URLFUZZ_REMOVE.TabIndex = 6;
-            this.checkBox_URLFUZZ_REMOVE.Text = "Remove NoStartsWith(\"/\")";
-            this.checkBox_URLFUZZ_REMOVE.UseVisualStyleBackColor = true;
-            // 
-            // button_URLFUZZ_CLEAR
-            // 
-            this.button_URLFUZZ_CLEAR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_URLFUZZ_CLEAR.Location = new System.Drawing.Point(405, 513);
-            this.button_URLFUZZ_CLEAR.Name = "button_URLFUZZ_CLEAR";
-            this.button_URLFUZZ_CLEAR.Size = new System.Drawing.Size(111, 34);
-            this.button_URLFUZZ_CLEAR.TabIndex = 7;
-            this.button_URLFUZZ_CLEAR.Text = "CLEAR";
-            this.button_URLFUZZ_CLEAR.UseVisualStyleBackColor = true;
-            this.button_URLFUZZ_CLEAR.Click += new System.EventHandler(this.button_URLFUZZ_CLEAR_Click);
-            // 
-            // button_URLFUZZ_SAVE
-            // 
-            this.button_URLFUZZ_SAVE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_URLFUZZ_SAVE.Location = new System.Drawing.Point(405, 473);
-            this.button_URLFUZZ_SAVE.Name = "button_URLFUZZ_SAVE";
-            this.button_URLFUZZ_SAVE.Size = new System.Drawing.Size(111, 34);
-            this.button_URLFUZZ_SAVE.TabIndex = 8;
-            this.button_URLFUZZ_SAVE.Text = "SAVE";
-            this.button_URLFUZZ_SAVE.UseVisualStyleBackColor = true;
-            this.button_URLFUZZ_SAVE.Click += new System.EventHandler(this.button_URLFUZZ_SAVE_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 152);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(329, 12);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "[*]DoubleClick item of listbox send data to Clipboard.";
-            // 
-            // checkBox_URLFUZZ_REPLACE1
-            // 
-            this.checkBox_URLFUZZ_REPLACE1.AutoSize = true;
-            this.checkBox_URLFUZZ_REPLACE1.Location = new System.Drawing.Point(47, 125);
-            this.checkBox_URLFUZZ_REPLACE1.Name = "checkBox_URLFUZZ_REPLACE1";
-            this.checkBox_URLFUZZ_REPLACE1.Size = new System.Drawing.Size(72, 16);
-            this.checkBox_URLFUZZ_REPLACE1.TabIndex = 10;
-            this.checkBox_URLFUZZ_REPLACE1.Text = ". -> %2e";
-            this.checkBox_URLFUZZ_REPLACE1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -239,6 +239,7 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "URLFUZZ v 1.0 By T00ls.Net";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
