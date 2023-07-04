@@ -334,5 +334,17 @@ namespace URLFUZZ
                 Clipboard.SetText(selectedItem);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.URLFUZZ_URL != string.Empty)
+            { 
+            
+            }
+            if (Properties.Settings.Default.URLFUZZ_CUSTOM != string.Empty)
+            {
+
+            }
+        }
     }
 }
